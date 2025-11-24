@@ -49,7 +49,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'm10', category: Category.MEAT, name: '鸡爪', price: 35, image: getRealImg('braised_chicken_feet_dim_sum', 'm10') },
   { id: 'm11', category: Category.MEAT, name: '葱爆肉丝', price: 38, image: getRealImg('stir_fried_shredded_pork_scallion_onion', 'm11') },
   // m12 moved to TOP
-  { id: 'm13', category: Category.MEAT, name: '肉沫', price: 28, image: getRealImg('stir_fried_minced_pork_ground_meat', 'm13') },
+  { id: 'm13', category: Category.MEAT, name: '肉沫', price: 28, image: new URL('./img/roumo.png', import.meta.url).href },
   { id: 'm14', category: Category.MEAT, name: '肉末茄子', price: 30, image: getRealImg('braised_eggplant_minced_pork_sauce', 'm14') },
   { id: 'm15', category: Category.MEAT, name: '咖喱鸡肉', price: 42, image: getRealImg('yellow_curry_chicken_potato_chunks', 'm15') },
   // m16 moved to TOP
