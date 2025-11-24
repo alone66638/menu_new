@@ -68,11 +68,29 @@ const CategoryNav: React.FC<CategoryNavProps> = ({ activeCategory, onSelect }) =
 };
 
 // 3. Image Component with Fallback
+const toSizedImage = (url: string, w: number, h: number) => {
+  try {
+    const u = new URL(url);
+    if (u.hostname.includes('loremflickr.com')) {
+      const parts = u.pathname.split('/').filter(Boolean);
+      if (parts.length >= 2 && !isNaN(Number(parts[0])) && !isNaN(Number(parts[1]))) {
+        parts[0] = String(w);
+        parts[1] = String(h);
+        u.pathname = '/' + parts.join('/');
+        return u.toString();
+      }
+    }
+  } catch {}
+  return url;
+};
+
 const DishImage: React.FC<{ src: string; alt: string; size?: 'sm' | 'md'; onClick?: () => void }> = ({ src, alt, size = 'md', onClick }) => {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(true);
 
   const dimClass = size === 'sm' ? 'w-16 h-16' : 'w-24 h-24';
+  const thumbSize = size === 'sm' ? 120 : 180;
+  const effectiveSrc = toSizedImage(src, thumbSize, thumbSize);
 
   if (error) {
     return (
@@ -88,10 +106,11 @@ const DishImage: React.FC<{ src: string; alt: string; size?: 'sm' | 'md'; onClic
         <div className="absolute inset-0 bg-gray-200 animate-pulse" />
       )}
       <img
-        src={src}
+        src={effectiveSrc}
         alt={alt}
         className={`w-full h-full object-cover transition-opacity duration-300 ${loading ? 'opacity-0' : 'opacity-100'}`}
         loading="lazy"
+        decoding="async"
         onLoad={() => setLoading(false)}
         onError={() => {
           setLoading(false);
@@ -439,9 +458,11 @@ export default function App() {
               <X size={20} />
             </button>
             <img
-              src={previewItem.image}
+              src={toSizedImage(previewItem.image, 800, 800)}
               alt={previewItem.name}
               className="rounded-xl shadow-2xl max-w-full max-h-[85vh] object-contain"
+              loading="eager"
+              decoding="async"
             />
           </div>
         </div>
