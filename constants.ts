@@ -52,11 +52,11 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'm11', category: Category.MEAT, name: '葱爆肉丝', price: 38, image: getRealImg('stir_fried_shredded_pork_scallion_onion', 'm11') },
   // m12 moved to TOP
   { id: 'm13', category: Category.MEAT, name: '肉沫', price: 28, image: new URL('./img/roumo.png', import.meta.url).href },
-  { id: 'm14', category: Category.MEAT, name: '肉末茄子', price: 30, image: getRealImg('braised_eggplant_minced_pork_sauce', 'm14') },
-  { id: 'm15', category: Category.MEAT, name: '咖喱鸡肉', price: 42, image: getRealImg('yellow_curry_chicken_potato_chunks', 'm15') },
+  { id: 'm14', category: Category.MEAT, name: '肉末茄子', price: 30, image: new URL('./img/roumoqiezi.png', import.meta.url).href },
+  { id: 'm15', category: Category.MEAT, name: '咖喱鸡肉', price: 42, image: new URL('./img/galijirou.png', import.meta.url).href },
   // m16 moved to TOP
   { id: 'm17', category: Category.MEAT, name: '炸鸡排', price: 25, image: new URL('./img/zhajipai.png', import.meta.url).href },
-  { id: 'm18', category: Category.MEAT, name: '可乐鸡翅', price: 38, image: getRealImg('cola_chicken_wings_glazed_brown', 'm18') },
+  { id: 'm18', category: Category.MEAT, name: '可乐鸡翅', price: 38, image: new URL('./img/kelejichi.png', import.meta.url).href },
   { id: 'm19', category: Category.MEAT, name: '土豆炖鸡肉', price: 45, image: new URL('./img/tudoudunjirou.png', import.meta.url).href },
   { id: 'm20', category: Category.MEAT, name: '炸鸡腿', price: 18, image: new URL('./img/zhajitui.png', import.meta.url).href },
   { id: 'm21', category: Category.MEAT, name: '鱼香肉丝', price: 36, image: getRealImg('yuxiang_shredded_pork_garlic_spicy_sauce', 'm21') },
