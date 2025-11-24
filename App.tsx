@@ -91,6 +91,15 @@ const DishImage: React.FC<{ src: string; alt: string; size?: 'sm' | 'md'; onClic
   const dimClass = size === 'sm' ? 'w-16 h-16' : 'w-24 h-24';
   const thumbSize = size === 'sm' ? 120 : 180;
   const effectiveSrc = toSizedImage(src, thumbSize, thumbSize);
+  const [currentSrc, setCurrentSrc] = useState(effectiveSrc);
+  const [triedOriginal, setTriedOriginal] = useState(false);
+  useEffect(() => {
+    const next = toSizedImage(src, thumbSize, thumbSize);
+    setCurrentSrc(next);
+    setTriedOriginal(false);
+    setLoading(true);
+    setError(false);
+  }, [src, thumbSize]);
 
   if (error) {
     return (
@@ -106,13 +115,20 @@ const DishImage: React.FC<{ src: string; alt: string; size?: 'sm' | 'md'; onClic
         <div className="absolute inset-0 bg-gray-200 animate-pulse" />
       )}
       <img
-        src={effectiveSrc}
+        src={currentSrc}
         alt={alt}
         className={`w-full h-full object-cover transition-opacity duration-300 ${loading ? 'opacity-0' : 'opacity-100'}`}
         loading="lazy"
         decoding="async"
         onLoad={() => setLoading(false)}
         onError={() => {
+          if (!triedOriginal && effectiveSrc !== src) {
+            setTriedOriginal(true);
+            setCurrentSrc(src);
+            setLoading(true);
+            setError(false);
+            return;
+          }
           setLoading(false);
           setError(true);
         }}
