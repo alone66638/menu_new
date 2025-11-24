@@ -102,6 +102,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'c5', category: Category.COLD_DISH, name: '炝芹菜', price: 18, image: getRealImg('blanched_celery_salad_peppercorn_oil', 'c5') },
   { id: 'c6', category: Category.COLD_DISH, name: '凉拌黄瓜', price: 16, image: getRealImg('smashed_cucumber_salad_garlic_vinegar', 'c6') },
   { id: 'c7', category: Category.COLD_DISH, name: '凉拌豆皮', price: 18, image: getRealImg('tofu_skin_salad_shredded_vegetables', 'c7') },
+  { id: 'c8', category: Category.VEGETABLE, name: '手撕柠檬鸡', price: 28, image: new URL('./img/shousiningmengji.png', import.meta.url).href },
 
   // --- 汤类 ---
   // s1 moved to Chef Rec
