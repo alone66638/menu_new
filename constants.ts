@@ -146,7 +146,7 @@ export const MENU_ITEMS: MenuItem[] = [
 
   // --- 甜品 ---
   { id: 'd1', category: Category.DESSERT, name: '奶茶', price: 15, image: getRealImg('bubble_milk_tea_tapioca_pearls_plastic_cup', 'd1') },
-  { id: 'd2', category: Category.DESSERT, name: '香橙巴巴路亚蛋糕', price: 28, image: getRealImg('orange_mousse_cake_slice_dessert', 'd2') },
+  { id: 'd2', category: Category.DESSERT, name: '香橙巴巴路亚蛋糕', price: 28, image: new URL('./img/babaluya.png', import.meta.url).href },
   { id: 'd3', category: Category.DESSERT, name: '香橙冰淇淋', price: 18, image: new URL('./img/xiangchengbingqilin.png', import.meta.url).href },
   { id: 'd4', category: Category.DESSERT, name: '葡萄冰淇淋', price: 18, image: getRealImg('grape_ice_cream_scoop_purple', 'd4') },
   { id: 'd5', category: Category.DESSERT, name: '芒果冰淇淋', price: 18, image: getRealImg('mango_ice_cream_scoop_yellow', 'd5') },
