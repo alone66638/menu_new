@@ -30,6 +30,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'v17', category: Category.TOP, name: '炸蘑菇', price: 28, image: new URL('./img/zhamogu.png', import.meta.url).href },
   { id: 'c1', category: Category.TOP, name: '五彩大拉皮', price: 26, image: new URL('./img/wucaidalapi.png', import.meta.url).href },
   { id: 's2', category: Category.TOP, name: '手打牛肉丸汤', price: 32, image: new URL('./img/shoudaniuwantang.png', import.meta.url).href },
+  { id: 'k11', category: Category.TOP, name: '瓦香鸡', price: 32, image: new URL('./img/waxiangji.png', import.meta.url).href },
   { id: 'v11', category: Category.TOP, name: '地三鲜', price: 32, image: new URL('./img/disanxian.png', import.meta.url).href },
 
   // --- 主厨推荐 ---
