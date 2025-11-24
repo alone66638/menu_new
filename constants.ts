@@ -37,7 +37,7 @@ export const MENU_ITEMS: MenuItem[] = [
   // --- 主厨推荐 ---
   { id: 'rec_tofu', category: Category.CHEF_REC, name: '葱烧豆腐', price: 24, image: new URL('./img/congshaodoufu.png', import.meta.url).href },
   { id: 'rec1', category: Category.CHEF_REC, name: '酸菜炖大骨头', price: 58, image: new URL('./img/suancaidundagutou.png', import.meta.url).href },
-  { id: 'rec2', category: Category.CHEF_REC, name: '爆炒芸豆丝', price: 28, image: getRealImg('stir_fried_shredded_kidney_beans_chili', 'rec2') },
+  { id: 'rec2', category: Category.CHEF_REC, name: '爆炒芸豆丝', price: 28, image: new URL('./img/yundou.png', import.meta.url).href },
   { id: 's1', category: Category.CHEF_REC, name: '鸭蛋豆腐汤', price: 22, image: new URL('./img/yadandoufutang.png', import.meta.url).href },
 
   // --- 荤菜 ---
@@ -48,7 +48,6 @@ export const MENU_ITEMS: MenuItem[] = [
   // m7 moved to TOP
   // m8 moved to TOP
   { id: 'm9', category: Category.MEAT, name: '油渣子', price: 38, image: new URL('./img/youzhazi.png', import.meta.url).href },
-  { id: 'm11', category: Category.MEAT, name: '葱爆肉丝', price: 38, image: getRealImg('stir_fried_shredded_pork_scallion_onion', 'm11') },
   // m12 moved to TOP
   { id: 'm13', category: Category.MEAT, name: '肉沫', price: 28, image: new URL('./img/roumo.png', import.meta.url).href },
   { id: 'm14', category: Category.MEAT, name: '肉末茄子', price: 30, image: new URL('./img/roumoqiezi.png', import.meta.url).href },
@@ -61,21 +60,20 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'm21', category: Category.MEAT, name: '鱼香肉丝', price: 36, image: new URL('./img/yuxiangrousi.png', import.meta.url).href },
   { id: 'm22', category: Category.MEAT, name: '酸菜鱼', price: 58, image: new URL('./img/suancaiyu.png', import.meta.url).href },
   { id: 'm23', category: Category.MEAT, name: '糖醋虾球', price: 52, image: new URL('./img/tangcuxiaqiu.png', import.meta.url).href },
-  { id: 'm24', category: Category.MEAT, name: '肉沫土豆', price: 32, image: getRealImg('stir_fried_minced_pork_potato_cubes', 'm24') },
   { id: 'm25', category: Category.MEAT, name: '软炸小酥肉', price: 40, image: new URL('./img/ruanzhaxiaosurou.png', import.meta.url).href },
   { id: 'm26', category: Category.MEAT, name: '麻辣香锅', price: 68, image: new URL('./img/malaxiangguo.png', import.meta.url).href },
   { id: 'm27', category: Category.MEAT, name: '尖椒酿肉', price: 38, image: new URL('./img/jianjiaoniangrou.png', import.meta.url).href },
   { id: 'm28', category: Category.MEAT, name: '炸丸子', price: 38, image: new URL('./img/zhawanzi.png', import.meta.url).href },
 
   // --- 素菜 ---
-  { id: 'v1', category: Category.VEGETABLE, name: '鸡蛋羹', price: 18, image: getRealImg('steamed_egg_custard_smooth_bowl', 'v1') },
+  { id: 'v1', category: Category.VEGETABLE, name: '鸡蛋羹', price: 18, image: new URL('./img/jidangao.png', import.meta.url).href },
   { id: 'v2', category: Category.VEGETABLE, name: '烤地瓜', price: 15, image: new URL('./img/kaodigua.png', import.meta.url).href },
   { id: 'v3', category: Category.VEGETABLE, name: '蚝油生菜', price: 22, image: new URL('./img/haoyoushengcai.png', import.meta.url).href },
   { id: 'v4', category: Category.VEGETABLE, name: '炒荷兰豆', price: 28, image: new URL('./img/chaohelandou.png', import.meta.url).href },
   { id: 'v5', category: Category.VEGETABLE, name: '西红柿炒鸡蛋', price: 24, image: new URL('./img/xihongshichaojidan.png', import.meta.url).href },
-  { id: 'v6', category: Category.VEGETABLE, name: '干煸杏鲍菇', price: 32, image: getRealImg('dry_fried_king_oyster_mushroom_slices', 'v6') },
-  { id: 'v7', category: Category.VEGETABLE, name: '炒合菜', price: 26, image: getRealImg('stir_fried_mixed_vegetables_bean_sprouts_vermicelli', 'v7') },
-  { id: 'v8', category: Category.VEGETABLE, name: '锡纸粉丝娃娃菜', price: 35, image: getRealImg('steamed_baby_cabbage_glass_noodles_garlic_foil', 'v8') },
+  { id: 'v6', category: Category.VEGETABLE, name: '干煸杏鲍菇', price: 32, image: new URL('./img/ganbianxingbaogu.png', import.meta.url).href },
+  { id: 'v7', category: Category.VEGETABLE, name: '炒合菜', price: 26, image: new URL('./img/chaohecai.png', import.meta.url).href },
+  { id: 'v8', category: Category.VEGETABLE, name: '锡纸粉丝娃娃菜', price: 35, image: new URL('./img/xizhifensiwawacai.png', import.meta.url).href },
   { id: 'v9', category: Category.VEGETABLE, name: '炒蒜薹', price: 28, image: getRealImg('stir_fried_garlic_scapes_green', 'v9') },
   { id: 'v10', category: Category.VEGETABLE, name: '土豆豆角', price: 30, image: new URL('./img/tudoudoujiao.png', import.meta.url).href },
   // v11 moved to TOP
@@ -85,8 +83,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'v16', category: Category.VEGETABLE, name: '炸辣椒', price: 22, image: new URL('./img/zhalajiao.png', import.meta.url).href },
   // v17 moved to TOP
   { id: 'v18', category: Category.VEGETABLE, name: '狼牙土豆', price: 18, image: new URL('./img/langyatudou.png', import.meta.url).href },
-  { id: 'v19', category: Category.VEGETABLE, name: '炒土豆丝', price: 18, image: getRealImg('stir_fried_shredded_potato_vinegar', 'v19') },
-  { id: 'v20', category: Category.VEGETABLE, name: '干煸菜花', price: 28, image: new URL('./img/ganbiancaihua.png', import.meta.url).href },
+  { id: 'v20', category: Category.VEGETABLE, name: '干煸菜花', price: 28, image: new URL('./img/ganbiancaihua2.png', import.meta.url).href },
   { id: 'v21', category: Category.VEGETABLE, name: '干锅土豆片', price: 32, image: new URL('./img/ganguotudoupian.png', import.meta.url).href },
   { id: 'v22', category: Category.VEGETABLE, name: '烤韭菜', price: 12, image: new URL('./img/kaojiucai.png', import.meta.url).href },
   { id: 'v23', category: Category.VEGETABLE, name: '外婆菜', price: 26, image: new URL('./img/waipocai.png', import.meta.url).href },
@@ -98,7 +95,7 @@ export const MENU_ITEMS: MenuItem[] = [
   // c1 moved to TOP
   { id: 'c2', category: Category.COLD_DISH, name: '凉拌藕片', price: 22, image: new URL('./img/liangbanoupian.png', import.meta.url).href },
   { id: 'c3', category: Category.COLD_DISH, name: '皮蛋豆腐', price: 20, image: new URL('./img/pidandoufu.png', import.meta.url).href },
-  { id: 'c4', category: Category.COLD_DISH, name: '炸花生米', price: 15, image: getRealImg('fried_peanuts_salt_appetizer', 'c4') },
+  { id: 'c4', category: Category.COLD_DISH, name: '炸花生米', price: 15, image: new URL('./img/huasheng.png', import.meta.url).href },
   { id: 'c5', category: Category.COLD_DISH, name: '炝芹菜', price: 18, image: new URL('./img/qiangqincai.png', import.meta.url).href },
   { id: 'c6', category: Category.COLD_DISH, name: '凉拌黄瓜', price: 16, image: getRealImg('smashed_cucumber_salad_garlic_vinegar', 'c6') },
   { id: 'c7', category: Category.COLD_DISH, name: '凉拌豆皮', price: 18, image: getRealImg('tofu_skin_salad_shredded_vegetables', 'c7') },
@@ -118,7 +115,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'st3', category: Category.STAPLE, name: '油泼面', price: 18, image: getRealImg('biangbiang_noodles_chili_oil_garlic', 'st3') },
   { id: 'st4', category: Category.STAPLE, name: '打卤面', price: 18, image: getRealImg('beijing_noodles_with_gravy_sauce', 'st4') },
   { id: 'st5', category: Category.STAPLE, name: '牛肉面', price: 24, image: getRealImg('beef_noodle_soup_braised_beef_chunks', 'st5') },
-  { id: 'st6', category: Category.STAPLE, name: '麻辣肉酱面', price: 20, image: getRealImg('spicy_minced_pork_noodles_sichuan', 'st6') },
+  { id: 'st6', category: Category.STAPLE, name: '麻辣肉酱面', price: 20, image: new URL('./img/roujiangmian.png', import.meta.url).href },
   { id: 'st7', category: Category.STAPLE, name: '炒面', price: 16, image: getRealImg('chow_mein_stir_fried_noodles_vegetables', 'st7') },
   { id: 'st8', category: Category.STAPLE, name: '麻酱拌面', price: 15, image: getRealImg('sesame_paste_noodles_cucumber', 'st8') },
   { id: 'st9', category: Category.STAPLE, name: '凉拌面', price: 15, image: getRealImg('cold_noodles_salad_spicy_sauce', 'st9') },
@@ -159,5 +156,5 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'd9', category: Category.DESSERT, name: '葡萄汁', price: 12, image: getRealImg('fresh_grape_juice_glass_purple', 'd9') },
   { id: 'd10', category: Category.DESSERT, name: '酸梅汤', price: 10, image: getRealImg('sour_plum_drink_glass_ice_chinese', 'd10') },
   { id: 'd11', category: Category.DESSERT, name: '酸奶麦片', price: 16, image: new URL('./img/suannaimaipian.png', import.meta.url).href },
-  { id: 'd12', category: Category.DESSERT, name: '蛋挞', price: 8, image: getRealImg('portuguese_egg_tart_pastry_bakery', 'd12') },
+  { id: 'd12', category: Category.DESSERT, name: '蛋挞', price: 8, image: new URL('./img/danta.png', import.meta.url).href },
 ];
