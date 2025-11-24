@@ -66,6 +66,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'm25', category: Category.MEAT, name: '软炸肉', price: 40, image: getRealImg('soft_fried_pork_strips_tempura_batter', 'm25') },
   { id: 'm26', category: Category.MEAT, name: '麻辣香锅', price: 68, image: new URL('./img/malaxiangguo.png', import.meta.url).href },
   { id: 'm27', category: Category.MEAT, name: '尖椒酿肉', price: 38, image: getRealImg('pan_fried_green_peppers_stuffed_pork', 'm27') },
+  { id: 'm28', category: Category.MEAT, name: '炸丸子', price: 38, image: new URL('./img/zhawanzi.png', import.meta.url).href },
 
   // --- 素菜 ---
   { id: 'v1', category: Category.VEGETABLE, name: '鸡蛋羹', price: 18, image: getRealImg('steamed_egg_custard_smooth_bowl', 'v1') },
@@ -77,7 +78,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'v7', category: Category.VEGETABLE, name: '炒合菜', price: 26, image: getRealImg('stir_fried_mixed_vegetables_bean_sprouts_vermicelli', 'v7') },
   { id: 'v8', category: Category.VEGETABLE, name: '锡纸粉丝娃娃菜', price: 35, image: getRealImg('steamed_baby_cabbage_glass_noodles_garlic_foil', 'v8') },
   { id: 'v9', category: Category.VEGETABLE, name: '炒蒜薹', price: 28, image: getRealImg('stir_fried_garlic_scapes_green', 'v9') },
-  { id: 'v10', category: Category.VEGETABLE, name: '土豆豆角', price: 30, image: getRealImg('stewed_green_beans_potato_chunks_chinese', 'v10') },
+  { id: 'v10', category: Category.VEGETABLE, name: '土豆豆角', price: 30, image: new URL('./img/tudoudoujiao.png', import.meta.url).href },
   // v11 moved to TOP
   { id: 'v12', category: Category.VEGETABLE, name: '萝卜丝丸子', price: 36, image: getRealImg('deep_fried_radish_balls_vegetarian', 'v12') },
   { id: 'v13', category: Category.VEGETABLE, name: '炖酸菜', price: 38, image: getRealImg('stewed_pickled_cabbage_pork_belly_north_east', 'v13') },
@@ -136,7 +137,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'st20', category: Category.STAPLE, name: '土豆饼', price: 12, image: getRealImg('korean_potato_pancake_gamjajeon', 'st20') },
   { id: 'st21', category: Category.STAPLE, name: '里脊大肉饼', price: 15, image: getRealImg('pork_tenderloin_burger_chinese_style', 'st21') },
   { id: 'st22', category: Category.STAPLE, name: '肉松火腿寿司', price: 18, image: getRealImg('sushi_roll_pork_floss_ham', 'st22') },
-  { id: 'st23', category: Category.STAPLE, name: '韩式拌饭', price: 26, image: getRealImg('bibimbap_stone_bowl_egg_on_top', 'st23') },
+  { id: 'st23', category: Category.STAPLE, name: '韩式拌饭', price: 26, image: new URL('./img/hanshibanfan.png', import.meta.url).href },
   { id: 'st24', category: Category.STAPLE, name: '茶叶蛋', price: 2, image: getRealImg('chinese_tea_egg_marbled_shell', 'st24') },
   { id: 'st25', category: Category.STAPLE, name: '豆沙饼', price: 8, image: getRealImg('red_bean_paste_pancake_sweet', 'st25') },
   { id: 'st26', category: Category.STAPLE, name: '手作饭团', price: 10, image: getRealImg('japanese_rice_ball_onigiri_seaweed', 'st26') },
