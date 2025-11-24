@@ -111,6 +111,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 's5', category: Category.SOUP, name: '黄瓜鸡蛋汤', price: 18, image: getRealImg('cucumber_egg_soup_clear_broth', 's5') },
 
   // --- 主食 ---
+  { id: 'st34', category: Category.STAPLE, name: '香酥饼', price: 15, image: new URL('./img/xiangsubing.png', import.meta.url).href },
   { id: 'st1', category: Category.STAPLE, name: '疙瘩汤', price: 15, image: getRealImg('dough_drop_soup_tomato_egg', 'st1') },
   { id: 'st2', category: Category.STAPLE, name: '葱油拌面', price: 16, image: getRealImg('scallion_oil_noodles_shanghai_style', 'st2') },
   { id: 'st3', category: Category.STAPLE, name: '油泼面', price: 18, image: getRealImg('biangbiang_noodles_chili_oil_garlic', 'st3') },
