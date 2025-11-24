@@ -31,6 +31,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'c1', category: Category.TOP, name: '五彩大拉皮', price: 26, image: new URL('./img/wucaidalapi.png', import.meta.url).href },
   { id: 's2', category: Category.TOP, name: '手打牛肉丸汤', price: 32, image: new URL('./img/shoudaniuwantang.png', import.meta.url).href },
   { id: 'k11', category: Category.TOP, name: '瓦香鸡', price: 32, image: new URL('./img/waxiangji.png', import.meta.url).href },
+  { id: 'p11', category: Category.TOP, name: '蒜蓉大虾', price: 32, image: new URL('./img/suanrongdaxia.png', import.meta.url).href },
   { id: 'v11', category: Category.TOP, name: '地三鲜', price: 32, image: new URL('./img/disanxian.png', import.meta.url).href },
 
   // --- 主厨推荐 ---
@@ -57,7 +58,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'm17', category: Category.MEAT, name: '炸鸡排', price: 25, image: getRealImg('deep_fried_chicken_cutlet_breaded_katsu', 'm17') },
   { id: 'm18', category: Category.MEAT, name: '可乐鸡翅', price: 38, image: getRealImg('cola_chicken_wings_glazed_brown', 'm18') },
   { id: 'm19', category: Category.MEAT, name: '土豆炖鸡肉', price: 45, image: getRealImg('stewed_chicken_chunks_potato_brown_sauce', 'm19') },
-  { id: 'm20', category: Category.MEAT, name: '炸鸡腿', price: 18, image: getRealImg('deep_fried_chicken_drumstick_crispy', 'm20') },
+  { id: 'm20', category: Category.MEAT, name: '炸鸡腿', price: 18, image: new URL('./img/zhajitui.png', import.meta.url).href },
   { id: 'm21', category: Category.MEAT, name: '鱼香肉丝', price: 36, image: getRealImg('yuxiang_shredded_pork_garlic_spicy_sauce', 'm21') },
   { id: 'm22', category: Category.MEAT, name: '酸菜鱼', price: 58, image: getRealImg('suancaiyu_fish_pickled_cabbage_soup', 'm22') },
   { id: 'm23', category: Category.MEAT, name: '糖醋虾球', price: 52, image: getRealImg('sweet_and_sour_shrimp_balls_red', 'm23') },
@@ -80,7 +81,7 @@ export const MENU_ITEMS: MenuItem[] = [
   // v11 moved to TOP
   { id: 'v12', category: Category.VEGETABLE, name: '萝卜丝丸子', price: 36, image: getRealImg('deep_fried_radish_balls_vegetarian', 'v12') },
   { id: 'v13', category: Category.VEGETABLE, name: '炖酸菜', price: 38, image: getRealImg('stewed_pickled_cabbage_pork_belly_north_east', 'v13') },
-  { id: 'v14', category: Category.VEGETABLE, name: '炒酸菜', price: 28, image: getRealImg('stir_fried_pickled_cabbage_simple', 'v14') },
+  { id: 'v14', category: Category.VEGETABLE, name: '炒酸菜', price: 28, image: new URL('./img/chaosuancai.png', import.meta.url).href },
   { id: 'v15', category: Category.VEGETABLE, name: '咖喱土豆', price: 28, image: getRealImg('yellow_curry_potato_chunks_vegetarian', 'v15') },
   { id: 'v16', category: Category.VEGETABLE, name: '炸辣椒', price: 22, image: getRealImg('fried_whole_green_peppers_blistered', 'v16') },
   // v17 moved to TOP
@@ -114,7 +115,7 @@ export const MENU_ITEMS: MenuItem[] = [
   // --- 主食 ---
   { id: 'st34', category: Category.STAPLE, name: '香酥饼', price: 15, image: new URL('./img/xiangsubing.png', import.meta.url).href },
   { id: 'st1', category: Category.STAPLE, name: '疙瘩汤', price: 15, image: getRealImg('dough_drop_soup_tomato_egg', 'st1') },
-  { id: 'st2', category: Category.STAPLE, name: '葱油拌面', price: 16, image: getRealImg('scallion_oil_noodles_shanghai_style', 'st2') },
+  { id: 'st2', category: Category.STAPLE, name: '葱油拌面', price: 16, image: new URL('./img/congyoubanmian.png', import.meta.url).href },
   { id: 'st3', category: Category.STAPLE, name: '油泼面', price: 18, image: getRealImg('biangbiang_noodles_chili_oil_garlic', 'st3') },
   { id: 'st4', category: Category.STAPLE, name: '打卤面', price: 18, image: getRealImg('beijing_noodles_with_gravy_sauce', 'st4') },
   { id: 'st5', category: Category.STAPLE, name: '牛肉面', price: 24, image: getRealImg('beef_noodle_soup_braised_beef_chunks', 'st5') },
@@ -130,7 +131,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 'st15', category: Category.STAPLE, name: '馄饨', price: 18, image: getRealImg('wonton_soup_bowl_scallions', 'st15') },
   { id: 'st16', category: Category.STAPLE, name: '炸薯条', price: 15, image: getRealImg('french_fries_basket_ketchup', 'st16') },
   { id: 'st17', category: Category.STAPLE, name: '蛋炒饭', price: 18, image: getRealImg('egg_fried_rice_bowl_scallions', 'st17') },
-  { id: 'st18', category: Category.STAPLE, name: '麻辣烫', price: 25, image: getRealImg('malatang_spicy_hot_pot_soup_bowl_ingredients', 'st18') },
+  { id: 'st18', category: Category.STAPLE, name: '麻辣烫', price: 25, image: new URL('./img/malatang.png', import.meta.url).href },
   { id: 'st19', category: Category.STAPLE, name: '麻辣拌', price: 22, image: getRealImg('malaban_spicy_mix_dry_stir_no_soup', 'st19') },
   { id: 'st20', category: Category.STAPLE, name: '土豆饼', price: 12, image: getRealImg('korean_potato_pancake_gamjajeon', 'st20') },
   { id: 'st21', category: Category.STAPLE, name: '里脊大肉饼', price: 15, image: getRealImg('pork_tenderloin_burger_chinese_style', 'st21') },
